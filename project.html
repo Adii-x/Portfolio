@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Adii Portfolio</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo"><a href="/">AD</a></div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <p class="projects-intro">
+        Here are some of the projects I’ve worked on recently. I love building practical applications that solve real-world problems and experimenting with new technologies.
+      </p>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>FitMaker Website</h3>
+          <p>A responsive fitness website showcasing workouts, nutrition guides, and a sleek UI for fitness enthusiasts.</p>
+          <div class="project-buttons">
+            <a href="https://adii-x.github.io/FitMaker_Website/" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/Adii-x/FitMaker_Website" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>Bookmark Manager</h3>
+          <p>A web app to save, organize, and manage bookmarks efficiently with search and filter features.</p>
+          <div class="project-buttons">
+            <a href="https://adii-x.github.io/bookmark-manager/" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/Adii-x/bookmark-manager" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>Python Calculator</h3>
+          <p>A command-line calculator built in Python for basic arithmetic operations.</p>
+          <div class="project-buttons">
+            <a href="https://github.com/Adii-x/Python/tree/main/Calculator" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JS for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
+</body>
+</html>

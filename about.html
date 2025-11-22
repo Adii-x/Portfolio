@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Adii Portfolio</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo"><a href="/">AD</a></div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I'm Adii, a passionate developer and designer who loves creating elegant
+            digital experiences. I specialize in web development, UI/UX design, 
+            machine learning, and cybersecurity. My goal is to combine creativity
+            with technical expertise to solve real-world problems.
+          </p>
+          <div class="skills">
+            <div class="skill">
+              <p>HTML</p>
+              <div class="skill-bar"><span style="width: 90%">90%</span></div>
+            </div>
+            <div class="skill">
+              <p>CSS</p>
+              <div class="skill-bar"><span style="width: 80%">80%</span></div>
+            </div>
+            <div class="skill">
+              <p>JavaScript</p>
+              <div class="skill-bar"><span style="width: 60%">60%</span></div>
+            </div>
+            <div class="skill">
+              <p>Python</p>
+              <div class="skill-bar"><span style="width: 80%">80%</span></div>
+            </div>
+            <div class="skill">
+              <p>Machine Learning</p>
+              <div class="skill-bar"><span style="width: 50%">50%</span></div>
+            </div>
+            <div class="skill">
+              <p>Cybersecurity</p>
+              <div class="skill-bar"><span style="width: 40%">40%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Adii Portfolio</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo"><a href="/">AD</a></div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p class="contact-intro">
+          I’d love to hear from you! Connect with me on any of these platforms:
+        </p>
+        <div class="contact-icons">
+          <a
+            href="https://www.linkedin.com/in/yourprofile"
+            target="_blank"
+            class="contact-link"
+          >
+            <img src="Images/Linkdine.png" alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/Adii-x"
+            target="_blank"
+            class="contact-link"
+          >
+            <img src="Images/Github.png" alt="GitHub" />
+            <span>GitHub</span>
+          </a>
+          <a href="mailto:youremail@example.com" class="contact-link">
+            <img src="Images/Gmail.png" alt="Email" />
+            <span>Email</span>
+          </a>
+          <a href="tel:+911234567890" class="contact-link">
+            <img src="Images/Phone.png" alt="Phone" />
+            <span>Phone</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS for Hamburger Menu -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>

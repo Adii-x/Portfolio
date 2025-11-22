@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adii Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo"><a href="/">AD</a></div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="header-content">
+        <!-- TEXT CONTENT -->
+        <div class="text-content">
+          <h1>Hello, I'm Adii</h1>
+          <p>I'm a passionate developer and designer creating elegant digital experiences.</p>
+          <a href="#contact" class="btn-contact">Contact Me</a>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="image-container">
+          <div class="image-placeholder">
+            <img src="Images/img.jpeg" alt="Image of Aditya" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- JS for Hamburger Menu -->
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('toggle');
+      });
+    </script>
+  </body>
+</html>
